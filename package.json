@@ -1,0 +1,54 @@
+{
+  "name": "semantic-service-front-end",
+  "homepage": "/rosettastone.kh.svc",
+  "version": "0.4.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/lab": "^5.0.0-alpha.116",
+    "@mui/material": "^5.11.5",
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "axios": "^1.2.3",
+    "bootstrap": "^5.2.3",
+    "react": "^18.2.0",
+    "@react-keycloak/web": "^3.4.0",
+    "keycloak-js": "^20.0.3",
+    "react-bootstrap": "^2.7.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.7.0",
+    "react-scripts": "^5.0.1",
+    "typescript": "^4.9.4"
+  },
+  "scripts": {
+    "start": "chmod +x ./env.sh && ./env.sh && mv env-config.js ./public/ && PORT=4200 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "3.4.0",
+    "prettier": "2.7.1"
+  }
+}

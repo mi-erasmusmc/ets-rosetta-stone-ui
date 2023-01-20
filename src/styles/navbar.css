@@ -1,0 +1,35 @@
+.navbar {
+  background-color: #86d2ed;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: flex-start;
+  color: #86d2ed;
+  padding: 10px;
+  vertical-align: middle;
+  boxshadow: 4px 9px 12px -4px rgba(0, 0, 0, 0.24);
+}
+
+.navbar-nav a {
+  text-decoration: none;
+  vertical-align: middle;
+  font-weight: 700;
+  color: #00216d;
+}
+
+.right {
+  justify-content: flex-end;
+  margin-left: auto;
+  padding: 10px 10px 1px;
+  vertical-align: middle;
+}
+
+.left {
+  justify-content: right;
+  vertical-align: middle;
+  padding: 10px 10px 10px 0;
+  /*margin-right: auto;*/
+}

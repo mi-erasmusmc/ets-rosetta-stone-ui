@@ -1,0 +1,13 @@
+.about-item {
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-bottom: 1em;
+  width: 50em;
+  max-width: 90%;
+  text-align: justify;
+}
+
+.about-sub-item {
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}

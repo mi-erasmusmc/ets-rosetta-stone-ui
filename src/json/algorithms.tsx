@@ -1,0 +1,88 @@
+import { MappingAlgorithm } from "../@types/service";
+
+export const algorithms: MappingAlgorithm[] = [
+  {
+    label: "eTox ➞ MedDRA Preferred Term",
+    name: "ETOX2MEDDRAPT",
+    organ: true,
+    finding: true,
+    options: "etox",
+  },
+  {
+    label: "HPATH ➞ SEND",
+    name: "HPATH2SEND",
+    organ: false,
+    finding: true,
+    options: "etox",
+  },
+  {
+    label: "MedDRA Preferred Term ➞ eTox",
+    name: "MEDDRAPT2ETOX",
+    organ: false,
+    finding: true,
+    options: "meddra",
+  },
+  {
+    label: "MedDRA Preferred Term ➞ SEND",
+    name: "MEDDRAPT2SEND",
+    organ: false,
+    finding: true,
+    options: "meddra",
+  },
+  {
+    label: "MedDRA Preferred Term ➞ SNOMED Anatomy",
+    name: "MEDDRAPT2SNOMED",
+    organ: false,
+    finding: true,
+    options: "meddra",
+  },
+  {
+    label: "Mouse Anatomy ➞ MedDRA System Organ Class",
+    name: "MA2MEDDRASOC",
+    organ: true,
+    finding: false,
+    options: "etox",
+  },
+  {
+    label: "Mouse Anatomy ➞ SNOMED Anatomy",
+    name: "MA2SNOMED",
+    organ: true,
+    finding: false,
+    options: "etox",
+  },
+  {
+    label: "SEND ➞ HPATH",
+    name: "SEND2HPATH",
+    organ: false,
+    finding: true,
+    options: "send neo non",
+  },
+  {
+    label: "SEND Lab Test ➞ MedDRA Preferred Term",
+    name: "SEND2MEDDRAPT",
+    organ: false,
+    finding: true,
+    options: "send lb",
+  },
+  {
+    label: "SEND Neoplasm ➞ MedDRA Preferred Term",
+    name: "SEND2MEDDRAPT",
+    organ: true,
+    finding: true,
+    options: "send neo",
+  },
+  {
+    label: "SEND Non-neoplastic Finding ➞ MedDRA Preferred Term",
+    name: "SEND2MEDDRAPT",
+    organ: true,
+    finding: true,
+    options: "send non",
+  },
+  {
+    label: "SNOMED Anatomy ➞ Mouse Anatomy",
+    name: "SNOMED2MA",
+    organ: true,
+    finding: false,
+    options: "snomed",
+  },
+];

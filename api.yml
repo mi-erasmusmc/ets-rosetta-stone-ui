@@ -1,0 +1,72 @@
+openapi: 3.0.1
+info:
+  title: Rosetta Stone
+  description: "Translate between various terminologies"
+  contact:
+    name: Rowan Parry
+    url: https://biosemantics.erasmusmc.nl/
+    email: r.parry@erasmusmc.nl
+  version: 0.4.0
+  x-meta:
+    serviceType: frontend
+    software:
+      name: Rosetta Stone
+      version: 0.4.0
+      description: "Translate between various terminologies"
+      provider: EMC
+    provider: EMC
+    created: 01-05-2022
+    lastChanged: 01-05-2022
+    uuid: 5be74cdb-e781-44db-945a-54b2d5c41a8d
+    released: 01-05-2022
+servers:
+  - url: /manage/v1
+    description: Base url
+paths:
+  /api:
+    get:
+      summary: Returns this API definition
+      description: Reports this API definition.
+      responses:
+        200:
+          description: YAML specification of this API
+          content:
+            text/yaml:
+              schema:
+                type: object
+  /ready:
+    get:
+      summary: Returns the online status of the service
+      description: Reports the online status (readiness) of the service.
+      responses:
+        200:
+          description: Service is ready.
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: Service is ready.
+  /alive:
+    get:
+      summary: Returns the health status of the service
+      description: Reports the health status of the service.
+      responses:
+        200:
+          description: Service is alive.
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: Service is alive and healthy.
+  /../../..:
+    get:
+      summary: UI of the service
+      description: Redirects to the UI of the service, which would be <host>/basePath/ then.
+      responses:
+        200:
+          description: Service UI.
+          content:
+            text/html:
+              schema:
+                type: string
+                example: Service UI.
