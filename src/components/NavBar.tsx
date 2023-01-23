@@ -26,26 +26,30 @@ export const NavBar = () => {
             <Link className={"right"} to="/about">
               About
             </Link>
-            <a
-              className="right"
-              style={{ padding: "0px" }}
-              href={toxhub}
-              rel="noreferrer"
-            >
-              <img
-                style={{ maxHeight: "30px" }}
-                src={require("../img/toxhub_logo.png")}
-                alt={"eTransafe logo"}
-              />
-            </a>
-            <a
-              className="left"
-              style={{ padding: "10px" }}
-              href={toxhub}
-              rel="noreferrer"
-            >
-              ToxHub
-            </a>
+            {toxhub && (
+              <a
+                className="right"
+                style={{ padding: "0px" }}
+                href={toxhub}
+                rel="noreferrer"
+              >
+                <img
+                  style={{ maxHeight: "30px" }}
+                  src={require("../img/toxhub_logo.png")}
+                  alt={"ToxHub logo"}
+                />
+              </a>
+            )}
+            {toxhub && (
+              <a
+                className="left"
+                style={{ padding: "10px" }}
+                href={toxhub}
+                rel="noreferrer"
+              >
+                ToxHub
+              </a>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Container>

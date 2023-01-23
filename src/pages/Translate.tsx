@@ -17,7 +17,11 @@ import {
   normalize,
 } from "../service/SemanticService";
 
-const algorithmOptions = algorithms;
+const algorithmOptions = [...algorithms].sort((a, b) => {
+  if (a.label.toLowerCase() < b.label.toLowerCase()) return -1;
+  if (a.label.toLowerCase() > b.label.toLowerCase()) return 1;
+  return 0;
+});
 
 function Translate() {
   const [request, setRequest] = useState({ findingCode: "", organCode: "" });

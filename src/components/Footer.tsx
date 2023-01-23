@@ -14,7 +14,7 @@ export const Footer = () => {
               <div className="about-sub-item" style={{ paddingTop: 0 }}>
                 See something strange? Would like a mapping added or removed?
                 <br />
-                Take a screenshot and send it to r.parry@erasmusmc.nl
+                Get in touch at r.parry@erasmusmc.nl
               </div>
               <div className="about-sub-item" style={{ paddingTop: "0.3em" }}>
                 Developed by the{" "}

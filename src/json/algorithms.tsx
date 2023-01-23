@@ -9,7 +9,7 @@ export const algorithms: MappingAlgorithm[] = [
     options: "etox",
   },
   {
-    label: "HPATH ➞ SEND",
+    label: "eTox ➞ SEND",
     name: "HPATH2SEND",
     organ: false,
     finding: true,

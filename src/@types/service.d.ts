@@ -33,6 +33,7 @@ declare global {
   interface String {
     ngrams(n: number): string[];
   }
+
   interface Window {
     _env_: {
       KEYCLOAK_ENABLED: string;

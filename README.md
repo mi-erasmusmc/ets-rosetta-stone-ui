@@ -1,5 +1,4 @@
-eTransafe Rosetta Stone UI
-==========================
+# eTransafe Rosetta Stone UI
 
 **A simple React interface for the eTransafe Rosetta Stone**
 
@@ -39,4 +38,3 @@ environment variables for your container in order to run the same build in diffe
 ### CONTRIBUTIONS
 
 This code was copy-pasted together by a back-end developer, contributions are welcome :-)
-
