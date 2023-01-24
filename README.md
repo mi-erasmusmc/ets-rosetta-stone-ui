@@ -2,6 +2,10 @@
 
 **A simple React interface for the eTransafe Rosetta Stone**
 
+![sample.png](./sample.png)
+
+A working version of the UI is available [here](https://emc-mi-notebooks.nl/rosettastone.kh.svc/)
+
 ### REQUIREMENTS
 
 - The eTransafe Rosetta Stone back-end up and running. It is
