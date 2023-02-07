@@ -71,8 +71,8 @@ export const About = () => {
           At present penalties are awarded as follows:
           <li>1 point for a traversal within the SNOMED CT hierarchy</li>
           <li>
-            1 point for ignoring a finding site (organ) associated with a
-            'clinical finding'
+            1 point for ignoring a finding site (organ) or abnormality
+            associated with a 'clinical finding'
           </li>
           <li>1 point for ignoring an 'AND' mapping</li>
           <li>
@@ -84,17 +84,24 @@ export const About = () => {
             opposite direction of which they were created.
           </li>
           <li>
+            0.1 point for a non-exact (broad, narrow or related) mapping from
+            preclinical to snomed.
+          </li>
+          <li>
             Negative scores are given to clinical terms that are mapped from an
             organ - finding combination but do not include the organ. For
             example the preclinical terms lip and abscess are mapped to
-            'abscess' this mapping then receives a negative score
+            'abscess' this mapping then receives a negative score. When mapping
+            from MedDRA to a preclinical vocabulary negative scores are reserved
+            when all we can provide is a finding site, e.g. HEAD as the result
+            of Headache receives a score of -1
           </li>
         </div>
         <div className="about-sub-item">
           <b>The mapping seems wrong, can you fix it?</b>
         </div>
         <div className="about-sub-item">
-          Mapping from preclinical terminologies to SNOMED have been manually
+          Mappings from preclinical terminologies to SNOMED have been manually
           created and are available on{" "}
           <a
             href="https://github.com/mi-erasmusmc/send-snomed-mappings"
@@ -122,12 +129,17 @@ export const About = () => {
           <b>Can you send me a file with all the generated mappings?</b>
         </div>
         <div className="about-sub-item">
-          Not at the moment. We have for the time being opted to only generate
-          individual mappings though the algorithm on demand, this allows us the
+          We have for the time being opted to simply generate individual
+          mappings though the algorithm on demand, this allows us the
           flexibility to deal with changes in the terminologies and improve the
-          mapping algorithm without having to run all combinations through the
-          app on each update. You can of course translate all terms and
-          combinations which are relevant to you through the API.
+          mapping algorithm without having to run all terms and combinations
+          through the app on each update. Generating a list of all MedDRA PTs to
+          the best results in a preclinical terminology is not much effort, if
+          you ask politely we can send you one. Vice versa the amount of
+          possible organ - finding combinations make this task a rather long
+          running process. You can of course translate all terms and
+          combinations which are relevant to you through the API or when running
+          the app on your own machinery.
         </div>
         <div className="about-sub-item">
           <b>Is there an API?</b>
