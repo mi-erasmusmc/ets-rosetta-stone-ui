@@ -1,4 +1,4 @@
-FROM node:14-alpine as builder
+FROM node:18-alpine as builder
 
 # INSTALL DEPS
 WORKDIR /app
@@ -12,7 +12,7 @@ COPY src ./src
 RUN npm run build
 
 
-FROM nginx:1-alpine
+FROM nginx:1.23-alpine
 
 RUN rm -rf /usr/share/nginx/html/*
 COPY nginx.conf /etc/nginx/conf.d/default.conf
