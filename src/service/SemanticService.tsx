@@ -32,7 +32,7 @@ export const doLookup = async (
 export const doMedDRALookup = async (value: string): Promise<string[]> => {
   return client()
     .get<{ terms: string[] }>(
-      `/concepts/lookup?vocabularies=MEDDRA&&conceptClass=PT&query=${value}`
+      `/concepts/lookup?vocabularies=MEDDRA&conceptClass=PT&query=${value}`
     )
     .then((resp) => {
       return resp.data?.terms ? resp.data.terms : [""];

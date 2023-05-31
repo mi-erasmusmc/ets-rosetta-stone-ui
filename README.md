@@ -26,15 +26,7 @@ The page reloads when you make edits.
 `npm run build` builds the app for production to the `build` folder.\
 It bundles React in production mode and optimizes the build for the best performance.
 
-### OPTIONS
-
-#### AUTHENTICATION
-
-If you have Keycloack enabled on the back-end you also need to enable it on the front-end in order to pass the tokens
-with your requests. In order to do this set KEYCLOAK_ENABLED=true in the .env file and also provide the required
-keycloak details.
-
-#### DOCKER
+### DOCKER
 
 The dockerfile builds the app and exposes it through NGINX you can pass the same values present in the .env file as
 environment variables for your container in order to run the same build in different environments.

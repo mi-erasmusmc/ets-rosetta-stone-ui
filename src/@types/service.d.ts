@@ -36,11 +36,7 @@ declare global {
 
   interface Window {
     _env_: {
-      KEYCLOAK_ENABLED: string;
       BACKEND_BASE_URL: string;
-      KEYCLOAK_URL: string;
-      KEYCLOAK_REALM: string;
-      KEYCLOAK_CLIENT_ID: string;
       TOXHUB_HOME: string;
     };
   }

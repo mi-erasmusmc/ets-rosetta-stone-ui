@@ -1,5 +1,3 @@
-import { ReactKeycloakProvider } from "@react-keycloak/web";
-import Keycloak from "keycloak-js";
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
@@ -9,26 +7,8 @@ import { NavBar } from "./components/NavBar";
 import { About } from "./pages/About";
 import Translate from "./pages/Translate";
 
-const keycloakEnabled = window._env_.KEYCLOAK_ENABLED;
-
-const kc = new Keycloak({
-  url: window._env_.KEYCLOAK_URL,
-  realm: window._env_.KEYCLOAK_REALM,
-  clientId: window._env_.KEYCLOAK_CLIENT_ID,
-});
-
 function App() {
   return (
-    <ReactKeycloakProvider
-      initOptions={{
-        onLoad: keycloakEnabled === "false" ? null : "login-required",
-        pkceMethod: "S256",
-      }}
-      authClient={kc}
-      onTokens={({ token }) => {
-        localStorage.setItem("token", token as string);
-      }}
-    >
       <BrowserRouter basename="/rosettastone.kh.svc">
         <div
           style={{
@@ -46,7 +26,6 @@ function App() {
           <Footer />
         </div>
       </BrowserRouter>
-    </ReactKeycloakProvider>
   );
 }
 
