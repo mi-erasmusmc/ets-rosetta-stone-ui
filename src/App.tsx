@@ -9,23 +9,23 @@ import Translate from "./pages/Translate";
 
 function App() {
   return (
-      <BrowserRouter basename="/rosettastone.kh.svc">
-        <div
-          style={{
-            minHeight: "100vh",
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          <NavBar />
-          <Routes>
-            <Route path="/" element={<Translate />} />
-            <Route path="/translate" element={<Translate />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
-          <Footer />
-        </div>
-      </BrowserRouter>
+    <BrowserRouter basename="/rosettastone.kh.svc">
+      <div
+        style={{
+          minHeight: "100vh",
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Translate />} />
+          <Route path="/translate" element={<Translate />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
