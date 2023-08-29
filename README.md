@@ -4,7 +4,7 @@
 
 ![sample.png](./sample.png)
 
-A working version of the UI is available [here](https://emc-mi-notebooks.nl/rosettastone.kh.svc/)
+A working version of the UI is available [here](https://emc-mi-notebooks.nl)
 
 ### REQUIREMENTS
 
