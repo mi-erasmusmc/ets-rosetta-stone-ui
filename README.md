@@ -20,7 +20,7 @@ Set the url for the eTransafe Rosetta Stone back-end in the .env file
 
 From the project directory, you can run `npm start`
 This runs the app in development mode.
-Open [http://localhost:4200/rosettastone.kh.svc](http://localhost:4200/rosettastone.kh.svc) to view it in the browser.
+Open [http://localhost:4200](http://localhost:4200) to view it in the browser.
 The page reloads when you make edits.
 
 `npm run build` builds the app for production to the `build` folder.\

@@ -14,11 +14,11 @@ function client() {
 export const doLookup = async (
   value: string,
   domain: string,
-  vocabulary: string
+  vocabulary: string,
 ): Promise<string[]> => {
   return client()
     .get<{ terms: string[] }>(
-      `/concepts/lookup?vocabularies=${vocabulary}&domains=${domain}&query=${value}`
+      `/concepts/lookup?vocabularies=${vocabulary}&domains=${domain}&query=${value}`,
     )
     .then((resp) => {
       return resp.data?.terms ? resp.data.terms : [""];
@@ -32,7 +32,7 @@ export const doLookup = async (
 export const doMedDRALookup = async (value: string): Promise<string[]> => {
   return client()
     .get<{ terms: string[] }>(
-      `/concepts/lookup?vocabularies=MEDDRA&conceptClass=PT&query=${value}`
+      `/concepts/lookup?vocabularies=MEDDRA&conceptClass=PT&query=${value}`,
     )
     .then((resp) => {
       return resp.data?.terms ? resp.data.terms : [""];
@@ -57,11 +57,11 @@ export const fetchTerms = async (vocabulary: string): Promise<Concept[]> => {
 
 export const normalize = async (
   value: string,
-  vocabulary: string
+  vocabulary: string,
 ): Promise<{ concepts: Concept[] }> => {
   return client()
     .get<{ concepts: Concept[] }>(
-      `/concepts/normalize?vocabularies=${vocabulary}&term=${value}`
+      `/concepts/normalize?vocabularies=${vocabulary}&term=${value}`,
     )
     .then((resp) => {
       return resp.data;
@@ -76,7 +76,7 @@ export const fetchMappings = (
   mappingAlgorithm: MappingAlgorithm,
   penalty: string,
   organCode: string,
-  findingCode: string
+  findingCode: string,
 ) => {
   if (mappingAlgorithm) {
     const codes = [];

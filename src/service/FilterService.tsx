@@ -29,7 +29,7 @@ export const filterOptions = (options: any[], state: { inputValue: any }) => {
       .map((option) => {
         const nMatches = intersect(
           inputTrigrams, // ngrams of search input (i.e. "crnflower")
-          option.name.ngrams(3) // ngrams of the option (i.e. "cornflowerblue")
+          option.name.ngrams(3), // ngrams of the option (i.e. "cornflowerblue")
         ).length;
         return {
           ...option,

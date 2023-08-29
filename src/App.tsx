@@ -9,7 +9,7 @@ import Translate from "./pages/Translate";
 
 function App() {
   return (
-    <BrowserRouter basename="/rosettastone.kh.svc">
+    <BrowserRouter>
       <div
         style={{
           minHeight: "100vh",

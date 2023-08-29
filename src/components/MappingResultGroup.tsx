@@ -33,11 +33,11 @@ const printResults = (items: Concept[]) => {
 };
 
 let mappingExplanation: (m: Mapping) => JSX.Element = function (
-  m: Mapping
+  m: Mapping,
 ): JSX.Element {
   const printConcepts = (items: Concept[]) => {
     const newArray = items.map(
-      (c) => c.name + " (" + c.vocabulary + " " + c.concept_class + ") "
+      (c) => c.name + " (" + c.vocabulary + " " + c.concept_class + ") ",
     );
     return newArray.join(" AND ");
   };

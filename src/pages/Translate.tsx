@@ -81,7 +81,7 @@ function Translate() {
           vocabulary: "",
           name: o,
           code: "",
-        })
+        }),
       );
       setOrganOptions(options);
     });
@@ -99,7 +99,7 @@ function Translate() {
           vocabulary: "",
           name: o,
           code: "",
-        })
+        }),
       );
       setFindingOptions(options);
     });
@@ -164,7 +164,7 @@ function Translate() {
         mappingAlgorithm,
         penalty,
         request.organCode,
-        request.findingCode
+        request.findingCode,
       );
       if (r) {
         r.then((resp) => {
