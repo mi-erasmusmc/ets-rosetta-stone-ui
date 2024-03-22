@@ -204,9 +204,12 @@ function Translate() {
             options={algorithmOptions}
             getOptionLabel={(a: MappingAlgorithm) => a.label}
             sx={{ width: "35vw" }}
-            placeholder="Select a translation"
             renderInput={(params) => (
-              <TextField {...params} label="Translation" />
+              <TextField
+                {...params}
+                label="Translation"
+                placeholder="Select a translation"
+              />
             )}
           />
         </div>
@@ -235,8 +238,13 @@ function Translate() {
               options={organOptions}
               getOptionLabel={(o: Concept) => o.name}
               sx={{ width: "30vw" }}
-              placeholder="Select an organ"
-              renderInput={(params) => <TextField {...params} label="Organ" />}
+              renderInput={(params) => (
+                <TextField
+                  {...params}
+                  label="Organ"
+                  placeholder="Select an organ"
+                />
+              )}
             />
           </div>
         )}
@@ -261,9 +269,12 @@ function Translate() {
               filterOptions={filterOptions}
               getOptionLabel={(o: Concept) => o.name}
               sx={{ width: "30vw" }}
-              placeholder="Select a finding"
               renderInput={(params) => (
-                <TextField {...params} label="Finding" />
+                <TextField
+                  {...params}
+                  label="Finding"
+                  placeholder="Select a finding"
+                />
               )}
             />
           </div>
@@ -282,9 +293,12 @@ function Translate() {
                 options={["0", "1", "2", "3"]}
                 sx={{ width: "12vw" }}
                 getOptionLabel={(n: string) => n}
-                placeholder="Max penalty"
                 renderInput={(params) => (
-                  <TextField {...params} label="Max penalty" />
+                  <TextField
+                    {...params}
+                    label="Max penalty"
+                    placeholder="Max penalty"
+                  />
                 )}
               />
             </div>
