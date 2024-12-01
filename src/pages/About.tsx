@@ -15,7 +15,7 @@ export const About = () => {
           aims to bridge the incongruity between preclinical (SEND, HPATH, MA)
           and clinical vocabularies (MedDRA). It was developed by the{" "}
           <a
-            href="https://biosemantics.erasmusmc.nl/"
+            href="https://www.erasmusmc.nl/en/research/groups/biosemantics-group"
             target="_blank"
             rel="noreferrer"
           >
@@ -110,10 +110,10 @@ export const About = () => {
           >
             GitHub
           </a>{" "}
-          You can send an email to r.parry@erasmusmc.nl if you would like to
-          contribute to the manual mappings. Mappings from MedDRA to SNOMED are
-          sourced from UMLS, Athena and WEB-RADR. It is possible to recommend
-          changes and new mappings through the{" "}
+          You can reach out on GitHub if you would like to contribute to the
+          manual mappings. Mappings from MedDRA to SNOMED are sourced from UMLS,
+          Athena and WEB-RADR. It is possible to recommend changes and new
+          mappings through the{" "}
           <a
             href="https://www.meddra.org/mapping"
             target="_blank"
@@ -273,7 +273,8 @@ export const About = () => {
       <h2>Contact</h2>
       <div className="about-item">
         <div className="about-sub-item">
-          Questions or suggestions? Send an email to r.parry@erasmusmc.nl
+          Questions or suggestions?
+          https://github.com/mi-erasmusmc/ets-rosetta-stone/issues
         </div>
       </div>
     </div>
