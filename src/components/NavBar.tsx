@@ -1,6 +1,6 @@
-import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import toxhubLogo from "../img/toxhub_logo.png";
 
 import "../styles/navbar.css";
 
@@ -35,7 +35,7 @@ export const NavBar = () => {
               >
                 <img
                   style={{ maxHeight: "30px" }}
-                  src={require("../img/toxhub_logo.png")}
+                  src={toxhubLogo}
                   alt={"ToxHub logo"}
                 />
               </a>

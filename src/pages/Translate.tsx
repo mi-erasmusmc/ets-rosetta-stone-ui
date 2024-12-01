@@ -2,7 +2,7 @@ import { InfoOutlined } from "@mui/icons-material";
 import LoadingButton from "@mui/lab/LoadingButton";
 import { Autocomplete, TextField } from "@mui/material";
 import Tooltip from "@mui/material/Tooltip";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { Concept, Mapping, MappingAlgorithm } from "../@types/service";
 import "../App.css";

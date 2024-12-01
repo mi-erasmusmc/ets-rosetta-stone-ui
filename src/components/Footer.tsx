@@ -1,7 +1,7 @@
-import React from "react";
-
 import "../App.css";
 import "../styles/footer.css";
+import emcLogo from "../img/logo-erasmus-MC.png";
+import etsLogo from "../img/etransafe_logo-2.png";
 
 export const Footer = () => {
   return (
@@ -39,12 +39,12 @@ export const Footer = () => {
             <img
               style={{ maxHeight: "42px", padding: "0" }}
               className={"right"}
-              src={require("../img/logo-erasmus-MC.png")}
+              src={emcLogo}
               alt={"Erasmus MC logo"}
             />
             <img
               style={{ maxHeight: "42px", paddingLeft: "5em" }}
-              src={require("../img/etransafe_logo-2.png")}
+              src={etsLogo}
               alt={"eTransafe logo"}
             />
           </div>

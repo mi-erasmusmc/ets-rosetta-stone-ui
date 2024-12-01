@@ -1,6 +1,6 @@
 import { ArrowUpward, InfoOutlined } from "@mui/icons-material";
 import Tooltip from "@mui/material/Tooltip";
-import React, { FunctionComponent, useEffect, useState } from "react";
+import { FunctionComponent, useEffect, useState } from "react";
 
 import { Concept, Mapping } from "../@types/service";
 

@@ -1,22 +1,25 @@
-FROM node:20-alpine AS builder
+FROM node:22-alpine AS builder
 
 # INSTALL DEPS
 WORKDIR /app
-COPY tsconfig.json ./
+COPY tsconfig.* ./
 COPY package.json ./
+COPY vite.config.ts ./
+COPY eslint.config.js ./
 RUN npm install
 
 # BUILD CODE
 COPY public ./public
 COPY src ./src
+COPY index.html ./
 RUN npm run build
 
 
-FROM nginx:1.25-alpine
+FROM nginx:1.27-alpine
 
 RUN rm -rf /usr/share/nginx/html/*
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY --from=builder /app/build /usr/share/nginx/html
+COPY --from=builder /app/dist /usr/share/nginx/html
 
 EXPOSE 4200
 

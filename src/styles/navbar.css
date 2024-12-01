@@ -10,7 +10,7 @@
   color: #86d2ed;
   padding: 10px;
   vertical-align: middle;
-  boxshadow: 4px 9px 12px -4px rgba(0, 0, 0, 0.24);
+  box-shadow: 4px 9px 12px -4px rgba(0, 0, 0, 0.24);
 }
 
 .navbar-nav a {
