@@ -267,14 +267,6 @@ export const About = () => {
           </a>
         </div>
       </div>
-      <hr />
-      <h2>Contact</h2>
-      <div className="about-item">
-        <div className="about-sub-item">
-          Questions or suggestions?
-          https://github.com/mi-erasmusmc/ets-rosetta-stone/issues
-        </div>
-      </div>
     </div>
   );
 };

@@ -20,9 +20,6 @@ export const NavBar = () => {
             <Link to="/" style={{ padding: "10px" }}>
               eTransafe Rosetta Stone
             </Link>
-            <Link className={"right"} to="/translate">
-              Translate
-            </Link>
             <Link className={"right"} to="/about">
               About
             </Link>

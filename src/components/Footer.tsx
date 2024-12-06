@@ -11,11 +11,6 @@ export const Footer = () => {
         <div className="mini-text">
           <div style={{ display: "flex" }}>
             <div>
-              <div className="about-sub-item" style={{ paddingTop: 0 }}>
-                See something strange? Would like a mapping added or removed?
-                <br />
-                Get in touch https://github.com/mi-erasmusmc/ets-rosetta-stone
-              </div>
               <div className="about-sub-item" style={{ paddingTop: "0.3em" }}>
                 Developed by the{" "}
                 <a

@@ -19,7 +19,6 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Translate />} />
-          <Route path="/translate" element={<Translate />} />
           <Route path="/about" element={<About />} />
         </Routes>
         <Footer />
