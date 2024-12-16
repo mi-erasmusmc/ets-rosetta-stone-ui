@@ -4,7 +4,7 @@
 
 ![sample.png](./sample.png)
 
-A working version of the UI is available [here](https://emc-mi-notebooks.nl)
+A working version of the UI is available [here](https://rosetta-stone.pantheon-hds.com/)
 
 ### REQUIREMENTS
 
@@ -20,7 +20,7 @@ Set the url for the eTransafe Rosetta Stone back-end in the .env file
 
 From the project directory, you can run `npm run dev`
 This runs the app in development mode.
-Open [http://localhost:5173](http://localhost:4200) to view it in the browser.
+Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 The page reloads when you make edits.
 
 `npm run build` builds the app for production to the `dist` folder.\
